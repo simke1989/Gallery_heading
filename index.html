@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Heading</title>
+    <style>
+
+    .wrapper {
+        border: 2px solid black;
+        width: 80%;
+        margin: auto;
+    }
+
+    .wrapper > div:first-child {
+        color: gray;
+        margin: 2%;
+    }
+
+    .thumb {
+        border: 1px;
+        border-radius: 5%;
+        background-color: #AABBCC;
+        width: 15.5%;
+        height: 150px;
+        margin: 2%;
+        overflow: hidden;
+    }
+
+    .wrapper > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .thumb > div:first-child {
+        height: 80%;
+    }
+
+    .thumb > div:last-child {
+        height: 20%;
+        background-color: white;
+        text-align: center;
+        padding: 5px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .thumb > div:first-child {
+        background-image: url("placeholder-image.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper > div:last-child {
+        margin: 2%;
+        color: gray;
+    }
+
+    @media only screen and (max-width: 414px) {
+        .thumb{
+            width: 80%;
+        }
+
+        .wrapper > div:nth-child(2){
+            justify-content: space-around;
+        }
+    }
+
+    @media only screen and (min-width: 414px) and (max-width: 1024px){
+        .thumb{
+            width: 25%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div>
+            <h1>Gallery Heading</h1>
+        </div>
+
+        <div>
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+    
+            <div class="thumb">
+                <div>
+                    
+                </div>
+
+                <div>
+                    Image title
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, repellat id. Ipsam optio necessitatibus doloremque tempore, atque natus, aut sint unde, praesentium harum voluptas quidem cumque quaerat magni eaque et!
+        </div>
+
+    </div>
+
+</body>
+</html>
